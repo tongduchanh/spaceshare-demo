@@ -1,0 +1,28 @@
+.booking-success-modal {
+  .modal-header {
+    border-bottom: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: $bkg-main-color;
+  }
+  .modal-body {
+    padding: .5rem;
+    .body-top {
+      margin-bottom: 13px;
+      img {
+        width: 47px;
+        height: 47px;
+      }
+    }
+    .body-bottom {
+      color: #777777;
+      padding: 5px 0 25px;
+    }
+  }
+  .modal-footer {
+    border-top: none;
+    .btn-coal {
+      color: $main-color;
+    }
+  }
+}

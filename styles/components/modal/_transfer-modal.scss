@@ -1,0 +1,58 @@
+.modal {
+  .transfer {
+    .modal-body {
+      padding: 25px;
+      h3 {
+        font-size: 16pt;
+        margin-bottom: 16px;
+      }
+      .transfer__user {
+        border: 1px solid $border-color;
+        display: flex;
+        flex-direction: column;
+        border-radius: 4px;
+        padding: 10px;
+        @media screen and (min-width: 768px){
+          flex-direction: row;
+        }
+        .transfer__user-avatar {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .transfer__img {
+            border: 1px solid $border-color;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 128px;
+              height: 128px;
+            }
+          }
+        }
+        .transfer__user-info {
+          @media screen and (min-width: 768px){
+            flex: auto;
+          }
+          .transfer__user-info-item {
+            font-weight: 600;
+            font-size: 1rem;
+          }
+        }
+      }
+      
+      
+    }
+  }
+}
+
+.transferred__user-info {
+  display: flex;
+  justify-content: center;
+  .transferred__user-avatar {
+    width: 8rem;
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}

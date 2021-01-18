@@ -1,0 +1,27 @@
+.menu {
+  &--bg-white {
+    background: #fff;
+  }
+  &__nav {
+    border-bottom: none;
+    .nav-item {
+      &.active {
+        border-bottom: 2px solid $main-color;
+      }
+      a {
+        &.nav-link {
+          font-size: 1rem;
+          padding: 0 30px;
+          padding-bottom: 12px;
+          cursor: pointer;
+          border-color: transparent !important;
+          color: $text-color;
+          &.active {
+            font-weight: 800;
+            border-bottom: 2px solid $main-color;
+          }
+        }
+      }
+    }
+  }
+}

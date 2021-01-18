@@ -1,0 +1,25 @@
+.profile-item {
+  .profile-item__title {
+    .title {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .btn-link {
+      font-weight: 700;
+      font-size: 1rem;
+      color: $coral-color;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      &.btn-disabled {
+        color: #ececec;
+      }
+    }
+  }
+  .profile-item__content {
+    font-size: 1rem;
+    .profile-item__select, input {
+      font-size: 1rem;
+      margin-right: 12px;
+    }
+  }
+}

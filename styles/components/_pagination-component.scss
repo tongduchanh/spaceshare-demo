@@ -1,0 +1,35 @@
+.pagination {
+  align-items: center;
+  justify-content: center;
+  .page-item {
+    .page-link {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      padding: 0 !important;
+      border: none;
+      margin: 0 5px;
+      transition-duration: 0.3s;
+      font-size: 0.9rem;
+
+      &:hover {
+        background: transparent;
+        color: $main-color;
+      }
+    }
+  }
+  .page-item {
+    &.active {
+      .page-link {
+        background-color: $main-color;
+        font-weight: bold;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

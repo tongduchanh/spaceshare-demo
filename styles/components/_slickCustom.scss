@@ -1,0 +1,111 @@
+.slick-list {
+  margin-left: -6px;
+  margin-right: -6px;
+  @media screen and (min-width: 768px) {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+}
+
+.slick-slide {
+  padding-left: 6px;
+  padding-right: 6px;
+  @media screen and (min-width: 768px) {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.slick-track {
+  margin-left: 0;
+}
+.slick-slider {
+  .slick-list, .slick-track {
+    transform: translateZ(0);
+  }
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15) !important;
+  background: #fff;
+}
+
+.slick-prev, .slick-next {
+  background: #fff;
+}
+
+.slick-disabled {
+  display: none !important;
+}
+
+.slick-arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  z-index: 1;
+  top: 50%;
+  @media screen and (max-width: 767px) {
+    display: none !important;
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    transition-duration: 0.3s;
+  }
+
+  &.slick-prev {
+    left: -15px;
+    right: auto;
+    &::before {
+      content: '';
+      background-image: url('/static/images/left-arrow.svg');
+      background-position: center;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      width: 20px;
+      height: 20px;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+    }
+  } /* end .slick-prev */
+
+  &.slick-next {
+    right: -15px;
+    left: auto;
+    &::before {
+      content: '';
+      background-image: url('/static/images/right-arrow.svg');
+      background-position: center;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      width: 20px;
+      height: 20px;
+      right: 50%;
+      bottom: 50%;
+      transform: translate(50%, 50%);
+    }
+  }
+}/* end .slick-arrow */
+
+.banner__slider {
+  .slick-slide  {
+    padding-bottom: 40px;
+    @media screen and (max-width: 767px) {
+      width: 272px !important;
+    }
+  }
+  .slick-arrow {
+    top: calc(50% - 20px) !important;
+  }
+}
+.service__slider {
+  .slick-slide  {
+    padding-bottom: 8px;
+  }
+}

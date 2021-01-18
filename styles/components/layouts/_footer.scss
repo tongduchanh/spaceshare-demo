@@ -1,0 +1,79 @@
+footer {
+  width: 100%;
+  min-height: 350px;
+  background: #f7f7f7;
+  .footer {
+    padding-top: 2em;
+    .image-container {
+      padding-bottom: 24px;
+      margin-bottom: 12px;
+      text-align: center;
+      display: flex;
+      position: relative;
+      .logo {
+        width: auto;
+        max-height: 83px;
+      }
+      .slogan-text {
+        font-size: 1rem;
+      }
+      .logo-text {
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
+
+    .footer__item {
+      @media (max-width: 767px) {
+        margin-bottom: 12px;
+        margin-top: 12px;
+      }
+      .footer__item-title {
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+      }
+      .footer__item-menu {
+        list-style: none;
+        li {
+          a {
+            color: $text-color;
+            transition-duration: 0.3s;
+            padding: 8px 0;
+            display: inline-block;
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+    
+
+    .fb-page,
+    .fb-page span, 
+    .fb-page span iframe[style] { 
+        width: 100% !important; 
+    }
+    .social-network {
+      margin-top: 1em;
+      span {
+        float: left;
+        padding-right: 2em;
+        img {
+          height: 2.5em;
+          width: 2.5em;
+        }
+      }
+    }
+  }
+
+  .footer--bottom {
+    border-top: 1px solid $border-color;
+    .footer__copy {
+      padding: 24px 0;
+      font-weight: 600;
+    }
+  }
+}

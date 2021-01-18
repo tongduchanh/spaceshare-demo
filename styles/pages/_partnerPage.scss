@@ -1,0 +1,224 @@
+.partner-page {
+  margin-top: 40px;
+  font-family: 'Open Sans', sans-serif;
+  .top-content {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+    }
+    h1, h2 {
+      font-size: 32px;
+      font-weight: 600;
+      color: $bkg-main-color;
+      text-align: center;
+      margin: 10px auto;
+    }
+    p.description {
+      font-size: 14px;
+      font-weight: normal;
+      color: #777777;
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 15px;
+      @media screen and (max-width: 767px) {
+        width: 85%
+      }
+    }
+  }
+  .advantages {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    .item {
+      vertical-align: top;
+      img {
+        margin-bottom: 15px;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $bkg-main-color;
+      }
+      p {
+        font-size: 14px;
+        font-weight: normal;
+        color: #777777;
+      }
+    }
+  }
+  .middle-content {
+    margin-top: 50px;
+    .row {
+      img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+      }
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+        color: $bkg-main-color;
+        margin-bottom: 20px;
+        @media screen and (max-width: 1024px) {
+          font-size: 24px;
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: normal;
+        color: #777777;
+      }
+    }
+    .row:last-of-type {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .partnership-timeline {
+    height: 400px;
+    background-color: gray;
+    padding: 50px;
+    @media screen and (max-width: 1024px) {
+      padding: 15px;
+    }
+    .container {
+      h1, h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: $main-color;
+        text-align: center;
+        margin-bottom: 30px;
+        @media screen and (max-width: 1024px) {
+          font-size: 24px;
+          margin-bottom: 15px;
+        }
+      }
+      .row {
+        text-align: center;
+        .item {
+          @media screen and (max-width: 1024px) {
+            max-height: 175px;
+          }
+          @media screen and (max-width: 767px) {
+            max-height: 160px;
+          }
+          img {
+            margin-bottom: 20px;
+            @media screen and (max-width: 1024px) {
+              height: 35%;
+            }
+            @media screen and (max-width: 767px) {
+              height: 30%;
+            }
+          }
+          p {
+            font-size: 14px;
+            font-weight: normal;
+            color: #ffffff;
+            @media screen and (max-width: 767px) {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-partner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .container {
+      h1, h2 {
+        font-size: 32px;
+        font-weight: 600;
+        color: $bkg-main-color;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      p.description {
+        font-size: 14px;
+        font-weight: normal;
+        color: #777777;
+        text-align: center;
+      }
+      .row:first-of-type {
+        justify-content: center;
+        a {
+          height: 4em;
+          width: 20%;
+          padding: 5px;
+          text-align: center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+          }
+        }
+      }
+      .row:last-of-type {
+        margin-top: 35px;
+        height: 424px;
+        .form-contact {
+          margin: 0 auto;
+          @media screen and (max-width: 1024px) {
+            margin: 0 auto;
+          }
+        }
+        img {
+          height: 100%;
+          @media screen and (max-width: 1024px) {
+            display: none;
+          }
+        }
+        .form-body {
+          height: 100%;
+          border-radius: 4px;
+          box-shadow: 0 2px 9px 0 rgba(217, 217, 217, 0.5);
+          background-color: #ffffff;
+          padding: 20px;
+          border: 1px solid #e4e4e4;
+          h3 {
+            font-size: 24px;
+            font-weight: 600;
+            color: $bkg-main-color;
+            text-align: center;
+            margin-bottom: 25px;
+          }
+          .form-group {
+            margin-bottom: 15px;
+            input {
+              border-radius: 20px;
+              background-color: $input-bkg;
+              font-size: 14px;
+              color: #777777;
+              padding: 0 25px;
+            }
+            .invalid-feedback {
+              margin-left: 25px;
+              margin-bottom: 2px;
+            }
+          }
+          button {
+            padding: 0 50px;
+            height: 40px;
+            border-radius: 31px;
+            background-color: $bkg-main-color;
+            font-size: 14px;
+            font-weight: 600;
+            color: #ffffff;
+            text-transform: uppercase;
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+            border: none;
+            @media screen and (max-width: 1024px) {
+              margin: 0 auto;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,136 @@
+.card-service {
+  border-radius: 6px;
+  box-shadow: 0 2px 20px 0 rgba(0,0,0,.05);
+  background-color: #fff;
+  padding: 32px 16px 16px;
+  position: relative;
+
+  .card-service__status {
+    position: absolute;
+    top: 8px;
+  }
+
+  .card-service__content {
+    @media (min-width: 992px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .card-service__logo {
+    img {
+      width: 100px;
+    }
+  }
+  .card-service__name {
+    font-size: 22px;
+    transition-duration: 0.3s;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  .card-service--top {
+    flex: 1 1 30%;
+    @media screen and (max-width: 991px) {
+      margin-bottom: 24px;
+    }
+  }
+  .card-service--middle {
+    padding-bottom: 24px;
+    flex: 1 1 40%;
+    @media (min-width: 992px) {
+      border-left: 1px solid $border-color;
+      padding: 0 20px;
+    }
+    .card-service__info {
+      .card-service__info-label {
+        font-size: 14px;
+        color: #616161;
+        margin-right: 6px;
+      }
+      .card-service__info-name {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .card-service--bottom {
+    flex: 0 300px;
+    padding-top: 12px;
+    border-top: 1px solid $border-color;
+    white-space: nowrap;
+    @media (min-width: 992px) {
+      padding: 0 30px;
+      border-left: 1px solid $border-color;
+      border-top: none;
+    }
+    
+  }
+}
+
+.box-white {
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,.05);
+  background-color: #fff!important;
+  padding: 16px 20px;
+}
+
+.service__select {
+  .service__select-input__value-container {
+    .service__select-input__input {
+      input {
+        border: none !important;
+      }
+    }
+  }
+}
+
+.service__select-input__control {
+  min-height: 40px !important;
+}
+
+.service-date-picker {
+  @media screen and (max-width: 991px) {
+    margin-top: 12px;
+  }
+}
+
+.btn-xl {
+  min-width: 40px !important;
+  height: 40px;
+  padding: 6px 0px;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 0.42857;
+  background: rgba(24, 144, 255, 1);
+}
+
+.list-group-item {
+  border: none;
+}
+
+.booking-btn-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-wrap-item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+}
+.profile-search__wrap-item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+#search {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+#subscription-button {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+}

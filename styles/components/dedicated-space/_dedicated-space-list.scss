@@ -1,0 +1,68 @@
+.dedicated__img {
+  overflow: hidden;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+.dedicated__image {
+  height: 100% !important;
+  width: 100% !important;
+  position: static !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  right: 0px !important;
+  transition: -ms-transform 1000ms ease-in 0s, -webkit-transform 1000ms ease-in 0s, transform 1000ms ease-in 0s !important;
+  &:hover {
+    transform: scale(1.1);
+    transition: -ms-transform 2000ms ease-out 0s, -webkit-transform 2000ms ease-out 0s, transform 2000ms ease-out 0s !important;
+  }
+}
+
+.slideshow {
+  height: 100% !important;         
+  width: 100% !important;
+  bottom: 0px !important;
+  left: 0px !important;
+  position: absolute !important;
+  right: 0px !important;
+  top: 0px !important;
+  background: #fff;
+  .item {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 4px;
+    img {
+      width: 100%;
+      transition: -ms-transform 1000ms ease-out 0s, -webkit-transform 1000ms ease-out 0s, transform 1000ms ease-out 0s !important;
+      transform: scale(1.1);
+    }
+  }
+  .slick-active {
+    img {
+      transform: scale(1);
+      -webkit-animation: cssAnimation 3000ms 1 ease-in-out forwards;
+      animation: cssAnimation 3000ms 1 ease-in-out forwards;
+    }
+  }
+}
+
+@keyframes cssAnimation {
+  from {
+    -webkit-transform: scale(1) translate(0px);
+  }
+  to {
+    -webkit-transform: scale(1.1) translate(0px);
+  }
+}
+
+@-webkit-keyframes cssAnimation {
+  from {
+    -webkit-transform: scale(1) translate(0px);
+  }
+  to {
+    -webkit-transform: scale(1.1) translate(0px);
+  }
+}

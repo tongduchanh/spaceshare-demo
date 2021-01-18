@@ -1,0 +1,38 @@
+#office {
+    .office-list-col, .office-filter-col {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #office {
+        .office-filter-col {
+            max-width: 220px;
+        }
+        .office-list-col {
+            max-width: calc(100% - 220px);
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #office {
+        .office-filter-col {
+            max-width: 250px;
+        }
+        .office-list-col {
+            max-width: calc(100% - 250px);
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #office {
+        .office-filter-col {
+            max-width: 270px;
+        }
+        .office-list-col {
+            max-width: calc(100% - 270px);
+        }
+    }
+}

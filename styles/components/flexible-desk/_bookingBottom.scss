@@ -1,0 +1,151 @@
+.booking-sidebar-wrap {
+  position: sticky;
+  top: 80px;
+  @media (min-width: 992px) {
+    border: 1px solid $border-color-3;
+  }
+  &--border {
+    border: 1px solid $border-color-3;
+  }
+}
+
+.booking-sidebar--bottom {
+  padding: 24px;
+  border-top: 1px solid $border-color-3;
+}
+
+.booking-sidebar {
+  border-radius: 4px;
+  padding: 24px;
+  @media screen and (max-width: 767px) {
+    margin-top: 24px;
+  }
+  .booking__header {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  
+  .booking-icon {
+    width: 20px;
+    height: auto;
+    border-radius: 50%;
+    background: rgba(156, 156, 156, 0.5);
+    padding: 2px;
+    margin-right: 5px;
+  }
+
+  .booking__btn {
+    .btn-gold {
+      height: 46px;
+    }
+  }
+}
+
+.booking-bottom {
+  width: 100%;
+  box-shadow: 0 -3px 6px 0 rgba(202, 202, 202, 0.5);
+  background-color: #eceef2;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+  .container {
+    .row {
+      margin-bottom: -20px;
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        color: #001a39;
+      }
+      p {
+        font-size: 14px;
+        font-weight: normal;
+        color: #001a39;
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+      button {
+        width: 100%;
+        height: 40px;
+        border-radius: 31px;
+        background-color: #001a39;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 10px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 25px;
+        }
+      }
+      .favorite-action {
+        &.un-favorite {
+          background: url('/static/images/coworking/un-like.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        &.favorite {
+          background: url('/static/images/coworking/like.svg');
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+        margin-top: 10px;
+        @media screen and (max-width: 767px) {
+          margin-bottom: 25px;
+        }
+        cursor: pointer;
+        height: 40px;
+        width: 100%;
+        svg {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+.favorite-wrap {
+  .favorite-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    &:hover {
+      transition-duration: 0.3s;
+    }
+    img {
+      width: 28px;
+      height: auto;;
+    }
+  }
+}
+.booking__subscription  {
+  li {
+    &.disabled {
+      color: #6c757d;
+      pointer-events: none;
+      background-color: transparent;
+    }
+  }
+}
+.dropdown-time {
+  max-height: 400px;
+  overflow: auto;
+  .dropdown-item {
+    padding: 8px 12px;
+    &:disabled {
+      text-decoration: line-through;
+      opacity: 0.3;
+    }
+  }
+}

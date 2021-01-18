@@ -1,0 +1,85 @@
+img {
+  object-fit: cover;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  transition-duration: all 0.3s;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.form-group {
+  position: relative;
+}
+hr {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.badge-status {
+  font-size: 12px;
+  padding: 6px;
+  color: $white-color;
+}
+
+.badge-danger {
+  background: $danger-color;
+}
+
+.badge-success {
+  background: #2dce89;
+}
+
+.badge-primary {
+  background: $primary-color;
+}
+.badge-info {
+  background: $info-color;
+}
+.badge-warning {
+  background: $warning-color;
+}
+.badge-default {
+  background: $default-color;
+}
+
+.hidden-check {
+  .custom-control-label {
+    background: #fff;
+    border: 1px solid #ececec;
+    padding: 9px 12px;
+    border-radius: 4px;
+    display: block;
+    // position: unset;
+  }
+  .custom-control-input:checked+.custom-control-label {
+    color: #fff;
+    background: $main-color !important;
+  }
+
+  .custom-control-input:disabled ~ .custom-control-label {
+    opacity: 0.65;
+  }
+
+  &.custom-checkbox .custom-control-label:before {
+    content: none;
+  }
+
+  &.disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+  }
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-gray {
+  color: rgb(113, 113, 113);
+}

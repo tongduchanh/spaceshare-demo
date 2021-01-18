@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="530px" viewBox="0 0 1440 530" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1440" height="530"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About-us">
+            <g id="Oval">
+                <g id="Group-29">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFBD30" xlink:href="#path-1"></use>
+                    <circle id="Oval" fill="#FBC95E" mask="url(#mask-2)" cx="49" cy="418" r="175"></circle>
+                    <circle id="Oval-Copy-3" fill="#FFC343" mask="url(#mask-2)" cx="1187.5" cy="566.5" r="373.5"></circle>
+                    <circle id="Oval-Copy-2" fill="#F5A700" opacity="0.26718285" mask="url(#mask-2)" cx="1241" cy="378" r="301"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

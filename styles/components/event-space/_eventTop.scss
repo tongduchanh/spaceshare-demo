@@ -1,0 +1,43 @@
+.event-type {
+  .event-type__item {
+    height: 80px;
+    position: relative;
+    display: flex !important;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px rgba(151, 151, 151, 0.15);
+    background-color: #fff;
+    .event-type__link {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .event-type__cover {
+      flex: 0 1 126px;
+      height: 100%;
+      position: relative;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .event-type__title {
+      padding-left: 20px;
+      flex: 1 1;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}

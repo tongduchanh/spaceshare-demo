@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/pages/*": ["pages/*"],
+      "@/components/*": ["components/*"],
+      "@/redux/*": ["redux/*"],
+      "@/sagas/*": ["sagas/*"],
+      "@/services/*": ["services/*"],
+      "@/styles/*": ["styles/*"],
+      "@/utils/*": ["utils/*"],
+      "@/constants/*": ["constants/*"],
+      "@/i18n*": ["i18n"],
+      "@/*": ["/*"]
+    },
+  },
+  "include": [
+    "/**/*.js",
+    "/**/*.jsx",
+  ],
+  "exclude": [
+    "node_modules",
+  ]  
+}

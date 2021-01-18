@@ -1,0 +1,93 @@
+.space-detail__gallery,  
+.space-detail__gallery .slick-list {
+  @media screen and (max-width: 767px) {
+    height: 200px;
+  }
+}
+  .space-detail__gallery {
+    height: 420px;
+    background: #000;
+    overflow: hidden;
+    position: relative;
+    @media screen and (max-width: 767px) {
+      height: 200px;
+    }
+    &.is-hovering {
+      .space-detail__gallery-image {
+        img:not(.is-hover) {
+          opacity: 0.8;
+        }
+      }
+    }
+  
+    .slick-list {
+      margin: 0 !important;
+      .slick-slide {
+        padding-left: 1.5px;
+        padding-right: 1.5px;
+        height: 420px;
+        cursor: pointer;
+        &.slick-active {
+          .space-detail__gallery-image {
+            &:hover {
+              img {
+                transform: scale(1.05);
+                transition: -webkit-transform .45s cubic-bezier(.645,.045,.355,1) 0s,transform .45s cubic-bezier(.645,.045,.355,1) 0s;
+              }
+            }
+          }
+        }
+      }
+      
+      .space-detail__gallery-image {
+        overflow: hidden;
+        position: relative;
+        transition: opacity .3s ease-in;
+        img {
+          height: 420px;
+          display: block;
+          transform: scale(1);
+          transition: -webkit-transform .45s cubic-bezier(.645,.045,.355,1) 0s,transform .45s cubic-bezier(.645,.045,.355,1) 0s,opacity .45s cubic-bezier(.645,.045,.355,1) 0s;
+          @media screen and (max-width: 767px) {
+            height: 200px;
+          }
+        }
+      }
+    }
+
+    .slick-arrow {
+      &.slick-next {
+        right: 100px;
+      }
+      &.slick-prev {
+        left: 100px;
+      }
+    }
+  }
+
+  .space-detail__amenty {
+    .space-service {
+      margin-top: 6px;
+      margin-bottom: 6px;
+      .space-service-cover {
+        img {
+          width: 26px;
+          height: auto;
+        }
+      }
+      .space-service-title {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .space-detail__price {
+    .price-wrap {
+      .price-item {
+        padding: 12px;
+        &:nth-child(odd) {
+          background: #f1f1f1;
+          }
+        }
+    }
+  }

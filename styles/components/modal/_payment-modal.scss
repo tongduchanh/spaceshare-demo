@@ -1,0 +1,21 @@
+.payment-modal, .modal-success {
+  .modal-header {
+    padding: 2rem;
+    &.modal-header--success {
+      background: #47c9a2;
+    }
+    &.modal-header--fail {
+      background: #ff6f61;
+    }
+  }
+  .modal-body {
+    .modal-body__title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+  }
+  .modal-content {
+    border: none;
+  }
+}

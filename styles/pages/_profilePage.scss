@@ -1,0 +1,493 @@
+.profile-info {
+  display: block;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+  .profile-info-detail {
+    border: solid 1px transparent;
+    height: fit-content;
+    border-radius: 4px;
+    padding: 2rem;
+    background: #fff;
+
+    .booking-left {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .booking-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: $bkg-main-color;
+
+      span {
+        &.booking-count {
+          float: right;
+          color: #777777;
+        }
+      }
+    }
+
+    .booking-item {
+      border-radius: 4px;
+      background-color: #f9fbff;
+      padding: 12px 22px 10px 17px;
+      margin: 20px 0px 20px;
+      overflow: auto;
+      cursor: pointer;
+
+      &.available {
+        border: 1px solid $main-color;
+      }
+
+      &.checked-in {
+        border: 1px solid #4ea3f6;
+      }
+
+      label {
+        color: #777777;
+
+        &.mg-right-10 {
+          margin-right: 10px;
+        }
+      }
+
+      span {
+        color: $bkg-main-color;
+      }
+    }
+
+    .action-btn {
+      margin-top: 1em;
+      text-align: center;
+
+      button {
+        &.btn-small {
+          border-radius: $input-height;
+          padding: .5em 1em;
+          min-width: 0;
+          font-weight: 600;
+
+          &.btn-coal {
+            border: solid .15em $bkg-main-color;
+            color: $main-color;
+            background-color: $bkg-main-color;
+          }
+        }
+      }
+    }
+
+
+    .rbc-calendar {
+      height: 400px;
+      @media screen and (max-width: 512px) {
+        height: 300px;
+      }
+      position: relative;
+
+      .rbc-toolbar {
+        background-color: $bkg-calendar-content;
+        border: solid 1px $border-color-blur;
+        border-bottom: none;
+        height: 42px;
+        margin: 0;
+
+        .rbc-toolbar-label {
+          font-size: 18px;
+          font-weight: bold;
+          color: $bkg-main-color;
+        }
+
+        .rbc-btn-group {
+          height: 33px;
+
+          button {
+            border: none;
+
+            &:nth-child(1) {
+              display: none;
+            }
+
+            &:nth-child(2) {
+              position: absolute;
+            }
+
+            &:nth-child(3) {
+              position: absolute;
+              border-radius: 0;
+              right: 0;
+            }
+          }
+        }
+      }
+
+      .rbc-month-view {
+        .rbc-month-header {
+          background-color: $bkg-calendar-title;
+          height: 2em;
+          line-height: 2em;
+        }
+
+        .rbc-day-bg {
+          cursor: pointer;
+          background-color: $bkg-calendar-title;
+
+          &.rbc-off-range-bg {
+            background-color: $bkg-calendar-off;
+          }
+
+          &.available-day {
+            background-color: $bkg-calendar-available;
+          }
+        }
+
+        .rbc-row-content {
+          cursor: pointer;
+
+          .rbc-row {
+            .rbc-date-cell {
+              color: $bkg-main-color;
+
+              &.rbc-off-range {
+                color: $text-gray-color;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .form-group {
+      color: $text-gray-color;
+      clear: both;
+      position: relative;
+      margin-bottom: 1rem;
+      @media screen and (max-width: 767px) {
+        margin-bottom: 1rem;
+      }
+
+      label.title {
+        &.profile {
+          width: 20%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        &.password {
+          width: 27%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        float: left;
+        line-height: $input-height;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      input {
+        &.profile {
+          width: 80%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        &.password {
+          width: 73%;
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+        }
+
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      .form-control[readonly] {
+        background-color: #fff;
+      }
+
+      select {
+        cursor: pointer;
+      }
+
+      //change password style
+      div.input-tool {
+        position: absolute;
+        right: 1em;
+        @media screen and (max-width: 767px) {
+          top: 56%;
+        }
+
+        span {
+          &.fa {
+            cursor: pointer;
+            line-height: $input-height;
+
+            &.fa-pencil-square-o {
+              color: $bkg-header-color;
+              margin-right: 5px;
+            }
+
+            &.activated {
+              color: $check-color;
+            }
+
+            &.deactivate {
+              color: $pink-border;
+            }
+
+            label {
+              @media screen and (max-width: 512px) {
+                display: none;
+              }
+              margin-left: .3em;
+            }
+          }
+        }
+      }
+    }
+
+    .booking-notes {
+      margin-top: 1em;
+
+      .left {
+        display: flex;
+
+        div {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+
+          &.available {
+            background-color: $main-color;
+          }
+
+          &.checked-in {
+            background-color: $using-color;
+          }
+
+          &.reject {
+            background-color: $pink-border;
+          }
+        }
+
+        label {
+          margin-left: .5em;
+        }
+      }
+
+      .right {
+        span {
+          float: right;
+
+          &:hover {
+            text-decoration-line: underline;
+            cursor: pointer;
+          }
+
+          img {
+            padding-right: .5em;
+          }
+        }
+      }
+    }
+
+    .profile-btn {
+      text-align: center;
+    }
+
+    .nav-tabs {
+      .nav-item {
+        cursor: pointer;
+      }
+    }
+
+    .tab-content {
+      .tab-pane {
+        .no-data {
+          margin: 1.3em;
+        }
+
+        .package {
+          height: fit-content;
+          border-radius: 4px;
+          border: solid 1px $border-color;
+          padding: 1em 0;
+          margin: 1.5em 0;
+          clear: both;
+          display: flex;
+          animation: fade-in 0.6s both;
+          -webkit-animation: fade-in 0.6s both;
+
+          .image-container {
+            width: 120px;
+            float: left;
+            text-align: center;
+
+            img {
+              width: 87px;
+              height: 87px;
+            }
+          }
+
+          .info-container {
+            width: calc(100% - 120px);
+            color: $text-gray-color;
+
+            span {
+              color: $bkg-main-color;
+
+              &.title {
+                font-size: 1.05em;
+                font-weight: 600;
+              }
+
+              &.smaller {
+                color: $text-gray-color;
+                font-size: .95em;
+              }
+
+              &.bigger {
+                font-weight: 500;
+              }
+            }
+
+            .description {
+              b {
+                color: $check-color;
+                font-size: 1rem;
+              }
+            }
+
+            .row {
+              margin-top: .6em;
+
+              .fa {
+                color: $check-color;
+
+                label {
+                  color: $bkg-main-color;
+                  margin-left: 1.6em;
+                  font-size: .75rem;
+                }
+              }
+            }
+
+            .action {
+              text-align: right;
+              padding-right: 2em;
+              clear: both;
+
+              span {
+                &.using {
+                  color: $using-color;
+                }
+
+                &.active-action {
+                  cursor: pointer;
+                  color: $check-color;
+
+                  &:hover {
+                    text-decoration-line: underline;
+                  }
+                }
+
+                &.payment-action {
+                  cursor: pointer;
+                  color: red;
+
+                  &:hover {
+                    text-decoration-line: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .history {
+          display: flex;
+          height: fit-content;
+          border-radius: 4px;
+          border: solid 1px $border-color;
+          box-shadow: 0 1px 1px 0 $border-color;
+          padding: 1em;
+          margin: 1.5em 0;
+
+          .left {
+            width: 80%;
+
+            .date {
+              color: $text-gray-color;
+            }
+
+            .code {
+              color: $bkg-main-color;
+            }
+          }
+
+          .right {
+            width: 20%;
+
+            .status {
+              float: right;
+              color: $text-gray-color;
+            }
+
+            .time {
+              clear: both;
+              float: right;
+              color: $bkg-main-color;
+            }
+          }
+        }
+      }
+    }
+
+    .warning-update-user {
+      font-style: italic;
+      font-size: 0.85em;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0.85rem;
+    }
+  }
+}
+
+.profile-item {
+  border-bottom: 1px solid $border-color;
+}
+
+.profile-title {
+  font-size: 1.5625rem !important;
+}
+
+.input__code {
+  margin-bottom: 12px;
+
+  input {
+    margin-right: 0px !important;
+    height: 46px !important;
+    width: 46px !important;
+    border: 1px solid $border-color-2 !important;
+    color: $text-color !important;
+    font-family: SpaceShare !important;
+
+    &:not(:last-child) {
+      border-right: none !important;
+    }
+
+    &:focus {
+      outline: none !important;
+      border: 1px solid $main-color !important;
+      caret-color: $main-color !important;
+    }
+  }
+}

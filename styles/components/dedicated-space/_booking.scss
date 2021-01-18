@@ -1,0 +1,174 @@
+.booking__tab {
+  // border-bottom: 0;
+  .nav-item {
+    flex: auto;
+    .nav-link {
+      border-color: #dee2e6 #dee2e6 #fff;
+      text-align: center;
+      cursor: pointer;
+      text-transform: capitalize;
+      color: $text-color;
+      &.active {
+        background: $main-color;
+        border-color: $main-color;
+        color: $white-color;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.booking-space {
+  font-size: 1rem;
+  border: 1px solid $border-color-3;
+  .booking__basic-rate {
+    padding: 16px 24px 0;
+    .text-lg {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .rate {
+      font-size: 26px;
+    }
+    .per-hour {
+      font-size: 1rem;
+    }
+  }
+  .booking__info {
+    padding: 12px 24px;
+  }
+}
+
+.booking__host {
+  padding: 24px;
+  border: 1px solid #e4e4e4;
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+}
+
+.host-avatar {
+  width: 68px;
+  height: 68px;
+}
+
+.image--circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.processing-cal {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background: #fff;
+  width: calc(100% - 2px);
+  height: calc(100% - 130px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing__item {
+  font-size: 1rem;
+  margin: 6px 0;
+  .text-tg {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+.booking__error {
+  font-size: 14px;
+}
+.text-danger {
+  color: $warning-color;
+}
+
+.booking__calender-input {
+  input {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('/static/images/down-arrow.svg');
+    }
+  }
+}
+.office-calendar {
+  position: relative;
+  &::before {
+    content: 'Ngày đến';
+    position: absolute;
+    top: -9px;
+    left: 9px;
+    padding-left: 4px;
+    padding-right: 4px;
+    // color: #ffbd30;
+    font-size: 12px;
+    z-index: 2;
+    background: #fff;
+  }
+  input {
+    height: 50px;
+    border-color: #cecece;
+    font-size: 1rem;
+    &:focus {
+      border: 2px solid #ffbd30;
+    }
+  }
+}
+
+.booking-office {
+  .booking__body {
+    padding: 24px;
+    @media (max-width: 767px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  .booking__title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 8px;
+  }
+  .booking__price {
+    .price {
+      font-size: 26px;
+    }
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  .booking__host {
+    border: none;
+    border-top: 1px solid #e4e4e4;
+    padding: 12px 24px;
+    @media (max-width: 767px) {
+      border: none;
+    }
+  }
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  .booking-office-calendar {
+    .DayPicker {
+      width: calc(200% + 16px) !important;
+      z-index: 1;
+    }
+  }
+  .btn-contact {
+    font-size: 14px;
+    padding: 12px;
+    background: #f1f1f1 !important;
+    border-radius: 4px;
+    a {
+      color: $text-color;
+      transition-duration: 0.3s;
+      font-weight: 900;
+      &:hover {
+        color: $main-color;
+      }
+    }
+  }
+}

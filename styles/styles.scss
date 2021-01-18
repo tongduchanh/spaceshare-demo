@@ -1,0 +1,112 @@
+//Variable and Mixins
+@import './vendors/variables';
+@import './vendors/mixins';
+
+//Pages
+@import 'pages/index';
+@import 'pages/coworking';
+@import 'pages/profilePage';
+@import 'pages/payment';
+@import 'pages/blog';
+@import 'pages/post';
+@import 'pages/noRouter';
+@import 'pages/about';
+@import 'pages/space-detail';
+@import 'pages/login';
+@import 'pages/my-event';
+@import 'pages/partnerPage';
+@import 'pages/policy';
+@import 'pages/my-service';
+@import 'pages/booking';
+@import 'pages/checkout';
+@import 'pages/partner';
+@import 'pages/faq';
+@import 'pages/hot-desk';
+@import 'pages/share';
+@import 'pages/office';
+
+//Components
+@import 'components/custom-input';
+@import 'components/usage-packages';
+@import 'components/booking-modal';
+@import 'components/rcTimePicker';
+@import 'components/reactDayPicker';
+@import 'components/notifications';
+@import 'components/bigCalendar';
+@import 'components/rightSideBar';
+@import 'components/pagination-component';
+@import 'components/datepicker';
+@import 'components/filter';
+@import 'components/lightGallery';
+@import 'components/partners';
+@import 'components/gallery';
+@import 'components/advance-search';
+@import 'components/booking-calendar';
+@import 'components/date-range-picker';
+@import 'components/work-space/service-slider';
+@import 'components/react-drawer';
+@import 'components/work-space/space-bar';
+
+//Dedicated space
+@import 'components/dedicated-space/booking';
+@import 'components/dedicated-space/dedicated-space-list';
+
+//Slick slide
+@import 'components/reactSlick';
+@import 'components/slickCustom';
+
+//Layout
+@import 'components/layouts/header';
+@import 'components/layouts/footer';
+@import 'components/layouts/language';
+
+//Home
+@import 'components/home/banner';
+@import 'components/home/service';
+@import 'components/home/background';
+
+//Flexible
+@import 'components/flexible-desk/bookingBottom';
+@import 'components/flexible-desk/flexible-list';
+
+//Event space
+@import 'components/event-space/eventTop';
+
+//Profile
+@import 'components/profile/profileImage';
+@import 'components/profile/profileNav';
+@import 'components/profile/menu';
+@import 'components/profile/profile-item';
+
+//Modal
+@import 'components/modal/verificationModal';
+@import 'components/modal/contactModal';
+@import 'components/modal/commonModal';
+@import 'components/modal/notification-modal';
+@import 'components/modal/transfer-modal';
+@import 'components/modal/booking-success-modal';
+@import 'components/modal/payment-modal';
+
+//Section
+@import 'components/section/section-header';
+@import 'components/section/section';
+
+//Element
+@import 'element/form';
+@import 'element/button';
+@import 'element/popover';
+@import 'element/element';
+@import 'element/react-select';
+@import 'element/modal';
+
+
+//Utilities
+@import 'utilities/spacing';
+@import 'utilities/utilities';
+
+//Setting
+@import 'settings/fonts';
+
+@import 'common';
+@import 'animation';
+@import 'layout';

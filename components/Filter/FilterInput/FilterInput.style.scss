@@ -1,0 +1,22 @@
+.filterText__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.filterText__input-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  border-bottom: 1px solid;
+  border-bottom-color: #bec2c9;
+  width: 100%;
+}
+.filterText__icon {
+  svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+.filterText__input {
+  border: none;
+  font-size: 15px;
+}

@@ -1,0 +1,328 @@
+
+.partner {
+  .section__title {
+    font-weight: 900;
+    @media screen and (max-width: 767px)  {
+      font-size: 32px;
+    }
+    &--white {
+      color: $white-color;
+    }
+    &--yellow {
+      color: $main-color;
+    }
+  }
+  .section__subtitle {
+    font-size: 18px;
+    color: #777575;
+    &--bold {
+      font-weight: 900;
+    }
+  }
+
+  .background {
+    position: relative;
+    @media (min-width: 768px) {
+      background-color: #29292c;
+    }
+    .background-wrap {
+      position: absolute;
+      left: 0;
+      top: 160px;
+      width: 100%;
+      height: auto;
+      @media (max-width: 767px) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    &__image {
+      opacity: 0.4;
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+      @media (max-width: 767px) {
+        min-height: 400px;
+      }
+    }
+
+    &__title {
+      font-weight: 900;
+      &--white {
+        color: $white-color;
+      }
+      &--yellow {
+        color: $main-color;
+      }
+    }
+
+    &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+
+      &-title {
+        font-size: 36px;
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      &-subtitle {
+        font-size: 21px;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+
+    .background-benefit {
+      border-radius: 24px;
+      border: 2px solid $main-color;
+      overflow: hidden;
+      &__header {
+        background: $main-color;
+        padding: 16px 24px;
+        text-align: center;
+        h2 {
+          font-weight: 900;
+        }
+        h3 {
+          font-weight: 700;
+          font-size: 18px;
+        }
+      }
+      &__body {
+        padding: 16px 24px;
+        ul {
+          list-style: none; 
+          li {
+            color: $white-color;
+            padding: 10px;
+            display: flex;
+            @media (max-width: 767px) {
+              color: $text-color;
+            }
+            img {
+              width: 20px;
+              height: 20px;
+              background: #19dc52;
+              border-radius: 50%;
+              padding: 3px;
+              margin-right: 16px;
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about {
+    &__subtitle {
+      border-left: 6px solid $main-color;
+      padding-left: 14px;
+    }
+    &__img {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .host-list {
+    .list {
+      display: flex;
+      justify-content: center;
+    }
+    .host-logo {
+      width: 112px;
+      height: 112px;
+      margin: 16px;
+      @media (min-width: 992px) {
+        &:nth-child(odd) {
+          margin-top: -24px;
+        }
+      }
+      @media (max-width: 767px) {
+        &:last-child {
+          display: none;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  .intro {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &__title {
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+  }
+
+  .cooperation {
+    background-color: $main-color;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .benefit {
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      margin-bottom: 72px;
+    }
+    &__item {
+      border-radius: 16px;
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.15);
+      background-color: #ffffff;
+      @media (max-width: 767px) {
+        margin-bottom: 24px;
+      }
+      @media (max-width: 991px) {
+        margin-bottom: 24px;
+      }
+      &-icon {
+        padding-top: 24px;
+        padding-left: 12px;
+        img {
+          width: 72px;
+          height: 72px;
+        }
+      }
+      &-body {
+        padding: 16px 24px 24px;
+      }
+      &-name {
+        font-size: 21px;
+        font-weight: 700;
+        min-height: 64px;
+      }
+      &-line {
+        width: 63px;
+        border-bottom: 0;
+        border-radius: 3px;
+      }
+      &-desc {
+        @media (min-width: 768px) {
+          min-height: 96px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    position: relative;
+    &:before {
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 50%;
+      left: 24px;
+      background: url('/static/images/partner/dot-background-top-left.svg');
+      z-index: -1;
+      @media (min-width: 992px) {
+        left: 40px;
+      }
+      @media (min-width: 1200px) {
+        width: 30%;
+        height: 60%;
+        left: 80px;
+      }
+    }
+    &__title {
+      font-size: 36px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 12px;
+      @media (max-width: 767px) {
+        font-size: 32px;
+      }
+    }
+    &__subtitle {
+      font-size: 24px;
+      text-align: center;
+      margin-bottom: 48px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    input {
+      height: 56px;
+      @media (max-width: 767px) {
+        height: 56px;
+      }
+    }
+    .form-control {
+      border-radius: 8px;
+      background-color: #d8d8d8;
+      font-size: 21px;
+      font-weight: 400;
+      padding: 16px 25px;
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
+      &:focus {
+        background: #fff;
+      }
+      
+    }
+    .btn-contact {
+      border-radius: 8px;
+      box-shadow: 0 2px 4px 0 rgba(255, 189, 48, 0.34);
+      background-color: $main-color;
+      font-size: 21px;
+      font-weight: 500;
+      height: 64px;
+      border: none;
+      margin-top: 8px;
+      color: #fff;
+      padding: 16px 24px;
+      @media (max-width: 767px) {
+        height: 56px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .contact-info {
+    .contact-info__box {
+      border-radius: 6px;
+      border: solid 2px #b6b6b6;
+      padding: 2rem;
+    }
+    ul {
+      list-style: none;
+      li {
+        word-break: break-word;
+        p {
+          display: flex;
+        }
+        .contact-info__logo {
+          width: 24px;
+          margin-right: 24px;
+        } 
+        .contact-info__contact {
+          font-size: 18px;
+          color: #707070;
+          a {
+            color: #707070;
+            transition-duration: 0.3s;
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

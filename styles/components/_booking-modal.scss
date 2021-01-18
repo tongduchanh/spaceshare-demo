@@ -1,0 +1,331 @@
+.booking-modal {
+  padding: 0 !important;
+  .modal-header {
+    border-bottom: none;
+    h5 {
+      margin: auto;
+    }
+    button {
+      position: absolute;
+      right: 16px;
+    }
+  }
+  .modal-body {
+    p {
+      color: #777777;
+      margin-top: 12px;
+    }
+    span {
+      color: $bkg-main-color;
+      font-weight: 500;
+      &.has-right-input {
+        line-height: 2rem;
+      }
+    }
+    .react-datepicker-wrapper {
+      width: 10em;
+      display: block;
+      float: right;
+      input {
+        height: 2rem;
+        font-size: .8rem;
+        color: $bkg-main-color;
+        background-color: $input-bkg;
+        text-align: center;
+      }
+    }
+    .react-datepicker-popper {
+      .react-datepicker__triangle {
+        margin-left: 120px;
+      }
+    }
+    
+    .booking-notes {
+      margin-bottom: .5em;
+      .col-6 {
+        display: flex;
+        div {
+          height: 20px;
+          width: 20px;
+          border-radius: 50%;
+          &.out-of-subs {
+            border: solid 1px $border-color-blur;
+            background-color: $bkg-calendar-content;
+          }
+          &.available {
+            border: solid 1px $border-color-blur;
+            background-color: $bkg-calendar-available;
+          }
+          &.full {
+            background-color: $full-color;
+          }
+          &.used {
+            background-color: $using-color;
+          }
+          &.unused {
+            background-color: $unused-color;
+          }
+          &.waiting {
+            background-color: $waiting-color;
+          }
+
+        }
+        label {
+          line-height: 20px;
+          margin-left: .5em;
+          font-size: .8rem;
+          color: $text-gray-color;
+        }
+      }
+    }
+    .booking-time {
+      margin-top: .3em;
+      clear: both;
+      .left {
+        float: left;
+      }
+      .right {
+        width: 10em;
+        float: right;
+      }
+    }
+    .subscription {
+      margin-bottom: 10px;
+    }
+
+    .booking-cwk {
+      margin-bottom: 10px;
+      .left {
+        .more {
+          font-weight: 700;
+          cursor: pointer;
+          margin-left: 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .right {
+        position: relative;
+        width: 15em;
+        input {
+          padding-left: 28px;
+          font-size: 13px;
+          &:active,
+          &:hover,
+          &:focus {
+            outline: 0;
+            box-shadow: none;
+          }
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 20px;
+          transform: translate(0, -50%);
+          width: 16px;
+          height: 16px;
+          background-image: url('/static/images/search.svg') 
+        }
+      }
+    }
+    .search-group-button {
+      button {
+        border-radius: 15px;
+        background-color: #f4f4f4;
+        color: #777777;
+        padding: 4px 18px;
+        min-width: 60px;
+        margin-top: 10px;
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        &:hover {
+          background-color: $main-color;
+          color: #001a39;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+    .coworkings-wrap {
+      clear: both;
+      padding-top: .3em;
+      .coworkings {
+        max-height: 400px;
+        overflow: hidden;
+        overflow-y: auto;
+        padding-left: 1px;
+        padding-right: 5px;
+        @media screen and (max-width: 767px) {
+          padding-left: 1px;
+          padding-left: 2px;
+        }
+        .item {
+          .space__item {
+            border: 1px solid transparent !important;
+            &:hover {
+              img {
+                border-top-right-radius: 4px;
+                border-top-left-radius: 4px;
+              }
+            }
+            margin: 0.8em 0;
+            .card-body {
+              padding-bottom: 1.2em;
+              .card-title {
+                float: none;
+              }
+            }
+            
+            &.unavailable, &.booked, &.limited {
+              opacity: 0.5;
+              &:hover {
+                cursor: default;
+                border: solid 1px transparent;
+                h5 {
+                  color: $bkg-main-color;
+                }
+              }
+            }
+
+            &.active{
+              border-color: $main-color !important;
+              box-shadow: none !important;
+              h5 {
+                color: $main-color !important;
+              }
+            }
+
+            img {
+              height: 145px;
+            }
+            h5 {
+              font-size: 1rem;
+              width: 100%;
+            }
+            .card-text {
+              height: 38px;
+              margin-bottom: 10px;
+              -webkit-line-clamp: 2;
+            }
+            .cwk-detail {
+              span {
+                width: fit-content;
+                color: $full-color;
+                float: left;
+                margin-top: -5px;
+              }
+            }
+          }
+        }
+
+        // &:after{
+        //   content: '';
+        //   clear: both;
+        //   height: 0;
+        // }
+      }
+    }
+    .booking-info-wrap {
+      .bottom {
+        .booking-list {
+          margin-top: 15px;
+          max-height: 400px;
+          overflow: hidden;
+          overflow-y: auto;
+        }
+        .booking-count {
+          float: right;
+          opacity: 0.5;
+
+        }
+      }
+      .top {
+        height: 270px;
+      }
+      .booking-button {
+        text-align: center;
+        margin-top: 30px;
+        .btn-coal {
+          color: $main-color;
+        }
+      }
+      .booking-item {
+        border-radius: 4px;
+        background-color: #f9fbff;
+        padding: 12px 22px 10px 17px;
+        margin: 10px 0 20px;
+        position: relative;
+        overflow: auto;
+        > div {
+          margin-bottom: 5px;
+        }
+        .booking-time {
+          margin: 0px;
+          margin-top: -5px;
+          .left {
+            margin-top: 4px;
+          }
+        }
+
+        label {
+          color: #777777;
+          &.mg-right-10 {
+            margin-right: 10px;
+          }
+        }
+        span {
+          color: $bkg-main-color;
+        }
+        .second-step {
+          border-radius: 3px;
+          background-color: $input-bkg;
+          text-align: center;
+          padding: 7px;
+          margin-top: 15px;
+          color: $bkg-main-color;
+          font-size: 14px;
+          font-weight: 600;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          cursor: pointer;
+          &:hover {
+            background-color: $main-color;
+            transition-duration: 0.3s;
+          }
+        }
+        .btn-remove-booking {
+          font-size: 20px;
+          top: 1px;
+          right: 25px;
+          position: absolute;
+          border: none;
+          background: none;
+          color: #efe6e6;
+          font-weight: 600;
+          cursor: pointer;
+          padding: 0;
+          margin: 0;
+          &:hover {
+            color: #495057;
+            transition-duration: 0.3s;
+          }
+          &:focus {
+            outline: none;
+          }
+          span {
+            color: #d1d1d1;
+          }
+        }
+      }
+    }
+  }
+  .modal-footer {
+    button {
+      margin: auto;
+    }
+  }
+}
+

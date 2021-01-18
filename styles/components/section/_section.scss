@@ -1,0 +1,20 @@
+.section {
+  &::before, &::after {
+    display: flex !important;
+    content: '' !important;
+  }
+}
+.section__main {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.section__body {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.section__bottom {
+  width: 100% !important;
+  margin-top: 8px !important;
+  text-align: left !important;
+}

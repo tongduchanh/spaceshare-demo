@@ -1,0 +1,21 @@
+.partners {
+  .slick-list {
+    margin: 0 !important;
+  }
+  .partner-slide {
+    width: 100%;
+    height: 96px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition-duration: 0.3s;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}

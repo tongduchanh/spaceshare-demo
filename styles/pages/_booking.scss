@@ -1,0 +1,147 @@
+.DayPicker {
+  border: 1px solid #ececec;
+  padding: 10px;
+  border-radius: 4px;
+}
+.booking__filter-error {
+  color: #ff5a5f;
+  padding: 12px 12px;
+  border: 1px solid #ff5a5f;
+  border-radius: 4px;
+}
+
+.booking__filter {
+  .booking__filter-input {
+    display: flex;
+    flex: auto;;
+    margin-right: 10px;
+    .title {
+      flex: 0 0 72px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .booking__order {
+    flex: 0 0 40%;
+  }
+}
+
+.booking__filter-item {
+  .title {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+.booking__space-service {
+  .space__item {
+    background: #fff;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition-duration: 0.3s;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.08), 0 10px 10px rgba(0,0,0,0.12);
+      img {
+        transition-duration: 0.3s;
+      }
+    }
+    .space__img {
+      img {
+        border-radius: 0 !important;
+      }
+    }
+    .space__info {
+      padding: .8em;
+    }
+    &.unavailable {
+      opacity: 0.5;
+      &:hover {
+        cursor: default;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+    }
+    &.active{
+      border-color: $main-color !important;
+      box-shadow: none !important;
+      border: 1px solid transparent;
+      h5 {
+        color: $main-color !important;
+      }
+    }
+  }
+}
+
+.booking-space--top {
+  padding-bottom: 40px;
+}
+
+.booking-space--bottom {
+  padding: 40px 0;
+  border-top: 1px solid $border-color-1;
+  .booking__space-service-info {
+    .booking__service-avatar {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 12px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    .booking__space-service-info--right {
+      @media screen and (min-width: 768px) {
+        padding-left: 1rem;
+      }
+    }
+    .booking__service-info {
+      font-size: 1rem;
+      .booking__service-name {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .booking__button {
+    .btn {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.booking__space-service {
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+  .booking__space-service-notes {
+    font-size: 1rem;
+  }
+}
+
+.booking-space--left {
+  @media screen and (min-width: 768px) {
+    padding-right: 15px !important;
+  }
+}
+
+.booking-space--right {
+  @media screen and (min-width: 768px) {
+    padding-left: 15px !important;
+  }
+}
+
+.space__status-badge {
+  display: unset;
+  padding: 0.4em;
+  font-size: 80%;
+  font-weight: 900;
+  border-radius: 1rem;
+}

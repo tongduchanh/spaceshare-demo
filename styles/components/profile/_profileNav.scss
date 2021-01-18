@@ -1,0 +1,111 @@
+.profile-nav {
+  border: solid 1px transparent;
+  height: fit-content;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 9px 0 $border-color;
+  background: #fff;
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+  }
+
+  .profile {
+    margin-top: 1em;
+    display: flex;
+    position: relative;
+
+    .image-container {
+      width: 80px;
+      float: left;
+      text-align: center;
+    }
+
+    .info-container {
+      width: calc(100% - 80px);
+      height: 60px;
+      float: left;
+      display: table;
+
+      div {
+        display: table-cell;
+        vertical-align: middle;
+
+        span {
+          white-space: nowrap;
+
+          &:nth-child(1) {
+            color: $bkg-main-color;
+            font-weight: bold;
+            font-size: 1rem;
+          }
+
+          &:nth-child(3) {
+            color: $text-gray-color;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+
+    .verify-container {
+      position: absolute;
+      left: 80px;
+      top: 60px;
+
+      button {
+        font-size: 14px;
+        font-weight: 600;
+        color: $text-color;
+        border-radius: 4px;
+        background-color: $main-color;
+        border: none;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  .navigation {
+    margin-top: .5em;
+
+    .list-group {
+      .list-group-item {
+        border-left: none;
+        border-right: none;
+        border-radius: none;
+        font-size: 1rem;
+        cursor: pointer;
+        color: $text-gray-color;
+        font-weight: 500;
+
+        &:last-child {
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        }
+
+        &:hover {
+          color: $text-color;
+        }
+
+        &.active {
+          color: $text-color;
+          background-color: #fff;
+          background-color: $bkg-hover-color;
+          border-color: $border-color-2;
+          font-weight: 700;
+        }
+      }
+
+      .warning-update-user {
+        width: 21px;
+        line-height: 20px;
+        height: 21px;
+        background: red;
+        border-radius: 20px;
+        text-align: center;
+
+        i {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

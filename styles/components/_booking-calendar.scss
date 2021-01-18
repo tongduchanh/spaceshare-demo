@@ -1,0 +1,62 @@
+.booking__subscription {
+  ul {
+    li {
+      cursor: pointer;
+      list-style: none;
+      padding: 8px 12px;
+      transition-duration: 0.3s;
+      &:hover {
+        background: rgb(244, 244, 244);
+      }
+    }
+  }
+}
+
+.dropdown__input {
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  &.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+
+
+.rc-time-picker  {
+  width: 100%;
+  .rc-time-picker-input {
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 40px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .rc-time-picker-clear {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.rc-time-picker-panel {
+  width: 10em;
+  .rc-time-picker-panel-input {
+    font-size: .8rem;
+    text-align: center;
+    color: $bkg-main-color;
+  }
+  .rc-time-picker-panel-select {
+    width: 50%;
+    overflow-x: hidden;
+    color: $bkg-main-color;
+  }
+}

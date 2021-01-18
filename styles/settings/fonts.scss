@@ -1,0 +1,77 @@
+@font-face { 
+  font-family: SpaceShare; 
+  src: 
+        url("/static/fonts/lato-regular.woff2") format("woff2"), 
+        url("/static/fonts/lato-regular.woff2") format("woff"), 
+        url("/static/fonts/lato-regular.woff2") format("truetype"); 
+  font-style: normal; 
+  font-weight: 400; 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: SpaceShare; 
+  src: 
+    url("/static/fonts/lato-regular.woff2") format("woff2"), 
+    url("/static/fonts/lato-regular.woff2") format("woff"), 
+    url("/static/fonts/lato-regular.woff2") format("truetype"); ; 
+  font-style: normal; 
+  font-weight: 500; 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: SpaceShare; 
+  src: 
+        url("/static/fonts/lato-bold.woff2") format("woff2"), 
+        url("/static/fonts/lato-bold.woff2") format("woff"), 
+        url("/static/fonts/lato-bold.woff2") format("truetype"); 
+  font-style: normal; 
+  font-weight: 700; 
+  font-display: swap; 
+}
+
+@font-face { 
+  font-family: SpaceShare; 
+  src: 
+        url("/static/fonts/lato-black.woff2") format("woff2"),
+        url("/static/fonts/lato-black.woff2") format("woff"), 
+        url("/static/fonts/lato-black.woff2") format("truetype"); 
+  font-style: normal;
+  font-weight: 900; 
+  font-display: swap;
+}
+
+// Font setting
+.post{
+  &__detail {
+    p, span, strong { 
+      font-family: 'Roboto', sans-serif, Helvetica;
+    }
+  }
+}
+
+.package__desk {
+  span, p {
+    font-family: 'Roboto', sans-serif, Helvetica;
+  }
+}
+
+.plan__info {
+  span {
+    font-family: 'Roboto', sans-serif, Helvetica;
+  }
+}
+
+.text-html {
+  font-family: 'Roboto', sans-serif, Helvetica;
+  color: $text-color !important;
+  line-height: 1.5rem !important;
+  font-size: 1rem !important;
+  span, p, div {
+    font-family: 'Roboto', sans-serif, Helvetica;
+    color: $text-color !important;
+    line-height: 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}

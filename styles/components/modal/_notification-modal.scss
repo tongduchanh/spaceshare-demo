@@ -1,0 +1,33 @@
+.notification-modal {
+  .modal-content {
+    background: linear-gradient(87deg,#f5365c 0,#f56036 100%)!important;
+    .modal-header {
+      border-bottom: none;
+      .modal-title {
+        color: #fff;
+      }
+    }
+    .close-button {
+      top: 10px !important;
+    }
+    .modal-body {
+      padding: 1.5rem;
+      color: #fff;
+      .text {
+        font-size: 1rem;
+      }
+    }
+    .modal-footer {
+      justify-content: flex-end;
+      border-top: none;
+      .btn-white {
+        transition: all .15s ease;
+        font-weight: 700;
+        &:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+        }
+      }
+    }
+  }
+}

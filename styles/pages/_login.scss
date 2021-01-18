@@ -1,0 +1,261 @@
+.btn-facebook {
+  width: 100%;
+  height: 40px !important;
+  background-color: #3f5d94 !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #2d4373 !important;
+  }
+}
+.btn-google {
+  width: 100%;
+  height: 40px !important;
+  background-color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px !important;
+  font-size: 14px !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: #f8fafb !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 2px 0px, rgba(0, 0, 0, 0.24) 0px 0px 1px 0px !important;
+  }
+}
+.btn-social {
+  @media (max-width: 767px) {
+    margin-bottom: 1rem;
+  }
+}
+.login-page {
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: #f9fbff;
+  padding: 70px 0;
+  height: calc(100vh - 72px);
+  @media screen and (max-width: 767px) {
+    padding: 5px 0;
+  }
+  .login-content {
+    width: 392px;
+    border-radius: 4px;
+    box-shadow: 0 2px 9px 0 rgba(217, 217, 217, 1);
+    background-color: #ffffff;
+    margin: auto;
+    padding: 26px;
+    @media screen and (max-width: 767px) {
+      margin-top: 24px;
+      padding: 18px;
+      width: 300px;
+    }
+    .additional-info {
+      // margin-bottom: 15px;
+      color: red;
+      font-weight: 600;
+    }
+    .btn-login {
+      margin-top: 25px;
+      width: 100%;
+      height: 40px;
+      background-color: $main-color;
+      color: $text-color;
+      text-transform: uppercase !important;
+      border: none;
+      font-size: 14px;
+    }
+    .login-form {
+      .form-header {
+        @media screen and (max-width: 767px) {
+          text-align: center;
+        }
+        h1,
+        h3 {
+          height: 24px;
+          font-size: 18px;
+          font-weight: 600;
+          color: $text-color;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+      }
+      .form-body {
+        // input:not([type="checkbox"]) {
+        //   width: 100%;
+        //   height: 40px;
+        //   border-radius: 20px;
+        //   background-color: $input-bkg;
+        //   padding: 10px 16px;
+        //   font-size: 14px;
+        // }
+
+        input[type='checkbox'] {
+          width: 21px;
+          height: 21px;
+          border-radius: 3px;
+          background-color: $input-bkg;
+          margin-left: 4px;
+          margin-top: 0;
+        }
+
+        .show-password {
+          position: absolute;
+          top: 10px;
+          right: 30px;
+          cursor: pointer;
+        }
+
+        .remember {
+          height: 15px;
+          label {
+            span {
+              height: 19px;
+              font-size: 14px;
+              color: $text-color;
+              margin-left: 30px;
+            }
+          }
+          a {
+            font-size: 14px;
+            color: $text-color;
+            float: right;
+            text-decoration: underline;
+          }
+        }
+        .btn-send-email {
+          margin-top: 0px;
+          margin-bottom: 10px;
+        }
+        .register-now {
+          text-align: center;
+          margin-bottom: 19px;
+          a {
+            color: #777777;
+            font-size: 14px;
+            cursor: pointer;
+            span {
+              color: #777777;
+              font-size: 14px;
+            }
+            span:last-of-type {
+              color: $text-color;
+            }
+          }
+          a:hover {
+            text-decoration: underline !important;
+          }
+        }
+        .register-or {
+          text-align: center;
+          margin-top: 28px;
+          margin-bottom: -10px;
+          span {
+            color: #777777;
+            font-size: 14px;
+            position: relative;
+            top: -36px;
+            padding: 0 20px;
+            background: #fff;
+          }
+        }
+        .facebook {
+          button {
+            width: 100%;
+            height: 40px;
+            background-color: #3f5d94;
+            font-size: 14px;
+            .fa-facebook-f {
+              margin-right: 7px;
+            }
+          }
+        }
+        .instruction {
+          font-size: 14px;
+          color: #777777;
+        }
+      }
+    }
+    .register-form {
+      .form-body {
+        .facebook {
+          margin-top: 18px;
+        }
+        input[type='text'] {
+          margin-top: 0;
+        }
+        .btn-login {
+          margin-top: 0;
+        }
+      }
+    }
+    .forgot-password-done {
+      text-align: center;
+      padding: 50px;
+      img {
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 14px;
+        color: #777777;
+        text-decoration: underline;
+        span {
+          font-weight: 600;
+          color: $text-color;
+        }
+      }
+    }
+    .reset-password-done {
+      padding: 25px;
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $text-color;
+        margin-bottom: 28px;
+      }
+      .avatar {
+        img {
+          width: 69px;
+          height: 66px;
+        }
+        span {
+          font-size: 18px;
+          line-height: 2.11;
+          color: $text-color;
+          margin-left: 16px;
+        }
+      }
+      hr {
+        height: 3px;
+      }
+      .bottom-message {
+        margin-top: 28px;
+        text-align: center;
+        margin-bottom: 29px;
+        img {
+          width: 47px;
+          height: 47px;
+          margin-bottom: 19px;
+        }
+        p {
+          font-size: 14px;
+          color: #777777;
+        }
+      }
+      .reset-submit {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.react-tel-input {
+  .form-control {
+    width: 100% !important;
+    border: solid 1px #ebebeb !important;
+  }
+}

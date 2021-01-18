@@ -1,0 +1,24 @@
+.react-select {
+  .react-select-input__control {
+    border-color: $border-color-2;
+    min-height: 40px;
+    &:hover {
+      border-color: $border-color-2;
+      box-shadow: none;
+    }
+    &:focus {
+      border-color: red;
+    }
+  }
+  // .react__select-input__value-container {
+
+  // }
+  .react-select-input__indicators {
+    .react-select-input__indicator-separator {
+      display: none;
+    }
+  }
+  .react-select-input__placeholder  {
+    color: $text-color;
+  }
+}

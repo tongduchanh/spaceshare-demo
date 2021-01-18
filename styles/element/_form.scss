@@ -1,0 +1,104 @@
+.form-control {
+  box-shadow: 0 3px 2px rgba(233,236,239,.05);
+  border-radius: 4px;
+  border: solid 1px $border-color-2;
+  &:focus {
+    border-color: $form-border-color !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.custom-form {
+  .form-group {
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: $text-color;
+    }
+  }
+
+  .react-datepicker__input-container {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translate(0, -50%);
+      background: url('/static/images/calendar.svg') no-repeat 0 transparent;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 16px;
+      width: 16px;
+      height: 16px;
+    }
+    .form-control {
+      box-shadow: 0 3px 2px rgba(233,236,239,.05);
+      border-radius: 4px !important;
+      border: solid 1px #d1d1d1;
+      background-color: #f4f4f4;
+      padding-left: 30px;
+      &:focus {
+        border-color: $form-border-color;
+        outline: none !important;
+        box-shadow: 0 3px 9px rgba(50,50,9,0), 3px 4px 8px rgba(94,114,228,.1)  !important;
+      }
+  
+      &.is-valid, &.is-invalid {
+        &:focus, &:checked {
+          box-shadow: none !important;
+        }
+      }
+    }
+  }
+}
+
+.was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
+  box-shadow: 0 3px 9px rgba(50,50,9,0), 3px 4px 8px rgba(94,114,228,.1);
+  border-color: #f5365c;
+}
+
+.was-validated .form-control:invalid, .form-control.is-invalid {
+  border-color: #f5365c !important;
+  background-image: none;
+}
+.was-validated .form-control:valid:focus, .form-control.is-valid:focus {
+  box-shadow: 0 3px 9px rgba(50,50,9,0), 3px 4px 8px rgba(94,114,228,.1);
+  border-color: #2dce89;
+}
+
+.was-validated .form-control:valid, .form-control.is-valid {
+  background-image: none;
+  border-color: #2dce89 !important;
+  padding-right: 0.7rem;
+}
+
+.form-time {
+  &:disabled {
+    opacity: 0.65;
+    background-color: #fff;
+    cursor: not-allowed;
+  }
+}
+
+.input-group-text {
+  &.phone-addon {
+    background-color: transparent !important;
+    border: solid 1px #ebebeb;
+  }
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}

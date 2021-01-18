@@ -1,0 +1,6 @@
+.flexibleBooking {
+  margin-bottom: 30px;
+  @media (min-width: 992px) {
+    border: 1px solid #e4e4e4;
+  }
+}

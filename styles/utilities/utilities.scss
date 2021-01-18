@@ -1,0 +1,167 @@
+@media (min-width: 992px) {
+  .col-lg-20 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  @for $i from 1 through 12 {
+    .col-xxl-#{$i} {
+      flex: 0 0 ($i / 12) * 100%;
+      max-width: ($i / 12) * 100%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .col-xl-20 {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+  .col-xl-16 {
+    flex-basis: 16.67%;
+    max-width: 16.67%;
+  }
+}
+
+.j-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.align-item-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.j-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item-20 {
+  flex: 0 0 20%;
+}
+
+.flex-item-50 {
+  flex: 0 0 50%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  width: 100%
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.display-md {
+  display: block;
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
+.display-md-none {
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.display-none {
+  display: none !important;
+}
+.display-lg {
+  display: block;
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.border-none {
+  border: none !important;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.position-unset {
+  position: unset;
+}
+
+.is-fixed {
+  position: fixed;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-md {
+  font-size: 14px;
+}
+.icon-24 {
+  width: 24px;
+  height: 24px;
+  fill: $text-color;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    &:horizontal {
+      display: none;
+    }
+  }
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left: -6px;
+  margin-right: -6px;
+  &::-webkit-scrollbar {
+      display: none;
+  }
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.fw-7 {
+  font-weight: 700 !important;
+}
+
+.fw-9 {
+  font-weight: 900 !important;
+}

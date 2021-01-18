@@ -1,0 +1,126 @@
+.faq-page {
+  .categories {
+    .slick-slide {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    .slick-track {
+      margin: 0 auto;
+    }
+    .category {
+      border-radius: 4px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18);
+      background-color: #ffffff;
+      padding: 16px 24px;
+      text-align: center;
+      border: solid 2px transparent;
+      transition-duration: 0.3s;
+      cursor: pointer;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      &.active, &:hover {
+        border: solid 2px $main-color;
+      }
+    }
+    .category__img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .category__title {
+      font-weight: bold;
+    }
+  }
+  
+
+  .questions {
+    .question--right {
+      flex: auto;
+    }
+    .question-item {
+      border-bottom: 2px solid #cbcbcd;
+      padding: 24px;
+    }
+    .question-dot {
+      width: 12px;
+      height: 12px;
+      background-color: $main-color;
+      border-radius: 50%;
+    }
+    .question-title {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .question {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .answer {
+      margin-top: 24px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      display: none;
+      &.show {
+        transition-duration: 0.5s;
+        display: block;
+      }
+    }
+  }
+  .search-title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .search-input {
+    font-size: 20px;
+    height: 64px;
+    background-color: #f0f0f1;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 32px;
+  }
+  .search-subtitle {
+    font-size: 18px;
+    color: #494949;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  .contact-item {
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px #ffbd30;
+    padding: 32px 16px;
+    @media (max-width: 767px) {
+      margin-bottom: 2rem;
+    }
+  }
+  .contact-item__icon {
+    margin-bottom: 12px;
+  }
+  .contact-item__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    a {
+      color: $text-color
+    }
+  }
+  .contact-item__subtitle {
+    font-size: 14px;
+  }
+  .no-question {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "BASE_URL": "https://develop.api.spaceshare.vn/",
+  "API_TIMEOUT": 30000,
+  "DEFAULT_LOCALE": "vi",
+  "LOCALES": [
+    "vi", "en"
+  ],
+  "LOCALE_MAP": {
+    "vi": "vi_VN",
+    "en": "en_US"
+  },
+  "LOCALE_NAME": {
+    "vi": "vi_name",
+    "en": "en_name"
+  },
+  "FACEBOOK_LOGIN_URL": "https://www.facebook.com/v3.2/dialog/oauth?client_id=380083072736944&display=popup&response_type=code&redirect_uri=https://develop.api.spaceshare.vn/authentication/v1/social-auth/redirect",
+  "WORDPRESS_API_ENDPOINT": "https://wordpressapi.spaceshare.vn/wp-json/wp/v2/",
+  "MOCKUP_API": "https://private-anon-34551b5cec-spaceshareenduser.apiary-mock.com"
+}

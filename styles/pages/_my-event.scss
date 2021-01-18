@@ -1,0 +1,235 @@
+.booking-event {
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  padding: 1rem;
+  margin: 1.5em 0;
+  position: relative;
+
+  .image-container {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .code {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    width: 70px;
+    height: 30px;
+    right: 24px;
+    top: 0;
+    background: #fbc02d;
+    padding: 5px;
+    border-radius: 0 0 4px 4px;
+    font-weight: 700;
+  }
+
+  .using {
+    h2 {
+      display: inline-block;
+
+      .badge {
+        font-size: 14px;
+        padding: 6px 12px;
+      }
+    }
+  }
+}
+
+.my-event {
+  .list-my-event {
+    border-radius: 6px;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, .05);
+    background-color: #fff;
+    padding: 32px 16px 16px;
+    position: relative;
+
+    .my-event__status {
+      position: absolute;
+      top: 8px;
+    }
+
+    .my-event-item {
+      display: flex;
+      flex-wrap: wrap;
+
+      &_title {
+        width: 43%;
+        border-right: 1px solid #ececec;
+
+        &_name {
+          font-size: 1.5rem;
+          transition-duration: 0.3s;
+
+          &:hover {
+            color: $main-color;
+          }
+        }
+
+        &_des {
+          font-size: 1rem;
+        }
+      }
+
+      &_time {
+        width: 37%;
+        border-right: 1px solid #ececec;
+        padding-left: 20px;
+
+        &_info {
+          &_label {
+            font-size: 14px;
+            color: #616161;
+            margin-right: 6px;
+          }
+
+          &_value {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &_handle {
+        width: 20%;
+        margin: auto;
+        text-align: center;
+
+        button {
+          max-width: 160px;
+          border-radius: 5px;
+          color: #fff;
+          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+          padding: 7px 15px;
+          font-size: 14px;
+          font-weight: 700;
+          transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+
+        .warning {
+          border-color: #ff6f61 !important;
+          background-color: #ff6f61 !important;
+        }
+
+        .success {
+          border-color: #2dce89 !important;
+          background-color: #2dce89 !important;
+        }
+
+        .primary {
+          border-color: #5592f5 !important;
+          background-color: #5592f5 !important;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1276px) {
+      .my-event__status {
+        font-size: 0.9rem;
+      }
+      .my-event-item {
+        &_title {
+          &_name {
+            font-size: 1.2rem;
+          }
+
+          &_des {
+            font-size: 0.9rem;
+          }
+        }
+
+        &_time {
+          padding-left: 15px;
+
+          &_info {
+            &_label {
+              font-size: 0.9rem;
+            }
+
+            &_value {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1082px) {
+      .my-event-item {
+        &_handle {
+          button {
+            font-size: 12px;
+            padding: 7px 11px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 1064px) {
+      .my-event-item {
+        &_title {
+          &_name {
+            font-size: 1rem;
+          }
+        }
+
+        &_time {
+          padding: 0 9px !important;
+
+          &_info {
+            &_label, &_value {
+              font-size: 0.85rem;
+            }
+          }
+        }
+
+        &_handle {
+          button {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 992px) {
+      .my-event-item {
+        &_title {
+          border-right: none;
+          width: 100%;
+
+          &_name {
+            margin-bottom: 0px !important;
+            font-size: 1.2rem;
+          }
+        }
+
+        &_time {
+          border-right: none;
+          width: 100%;
+          border-bottom: 1px solid #ececec;
+          padding: 5px 0 !important;
+
+          &_info {
+            &_label, &_value {
+              font-size: 0.9rem;
+            }
+          }
+        }
+
+        &_handle {
+          padding-top: 12px;
+          width: 100%;
+          button {
+            font-size: 12px;
+            padding: 7px 15px;
+          }
+        }
+      }
+    }
+
+  }
+}
